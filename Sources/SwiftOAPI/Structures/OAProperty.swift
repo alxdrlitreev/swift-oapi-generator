@@ -10,7 +10,8 @@ enum OAPropertyType: String, Decodable {
 }
 
 struct OAProperty: Decodable {
-    var type: OAPropertyType?
+    var type: OAPropertyType
     var items: [String: OAEither<String, [String]>]?
+    var `enum`: [String]?
 }
 
