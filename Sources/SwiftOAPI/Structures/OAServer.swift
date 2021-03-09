@@ -1,6 +1,6 @@
 import Foundation
 
-struct OAServer: Decodable {
-    var url: String
-    var description: String
+public struct OAServer: Decodable {
+    public var url: String
+    public var description: String
 }

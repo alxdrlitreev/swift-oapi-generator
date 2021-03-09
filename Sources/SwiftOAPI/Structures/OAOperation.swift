@@ -1,7 +1,7 @@
 import Foundation
 
-struct OAOperation: Decodable {
-    var requestBody: OAContent?
-    var parameters: [OAParameter]?
-    var responses: [String: OAContent]?
+public struct OAOperation: Decodable {
+    public var requestBody: OAContent?
+    public var parameters: [OAParameter]?
+    public var responses: [String: OAContent]?
 }

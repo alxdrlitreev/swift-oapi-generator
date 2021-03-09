@@ -1,10 +1,10 @@
 import Foundation
 
-enum OAEither<LHS: Decodable, RHS: Decodable>: Decodable {
+public enum OAEither<LHS: Decodable, RHS: Decodable>: Decodable {
     case lhs(LHS)
     case rhs(RHS)
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         if let lhs = try? LHS(from: decoder) {
             self = .lhs(lhs)
             return

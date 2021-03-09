@@ -1,5 +1,5 @@
 import Foundation
 
-struct OAContent: Decodable {
-    var content: [String: OAContentSchema]?
+public struct OAContent: Decodable {
+    public var content: [String: OAContentSchema]?
 }

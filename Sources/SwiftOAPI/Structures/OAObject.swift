@@ -1,7 +1,7 @@
 import Foundation
 
 public struct OAObject: Decodable {
-    var servers: [OAServer]
-    var components: OAComponents
-    var paths: [String: OAPath]
+    public var servers: [OAServer]
+    public var components: OAComponents
+    public var paths: [String: OAPath]
 }

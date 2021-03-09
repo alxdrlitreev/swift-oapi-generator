@@ -1,5 +1,5 @@
 import Foundation
 
-enum OAError: Error {
+public enum OAError: Error {
     case failedToDecode
 }

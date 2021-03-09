@@ -1,6 +1,6 @@
 import Foundation
 
-enum OAPropertyType: String, Decodable {
+public enum OAPropertyType: String, Decodable {
     case integer
     case number
     case boolean
@@ -9,9 +9,9 @@ enum OAPropertyType: String, Decodable {
     case array
 }
 
-struct OAProperty: Decodable {
-    var type: OAPropertyType
-    var items: [String: OAEither<String, [String]>]?
-    var `enum`: [String]?
+public struct OAProperty: Decodable {
+    public var type: OAPropertyType
+    public var items: [String: OAEither<String, [String]>]?
+    public var `enum`: [String]?
 }
 
