@@ -1,7 +1,7 @@
 import Foundation
 
-struct OAScheme: Decodable {
-    var required: [String]?
-    var type: String
-    var properties: [String: OAEither<OAProperty, [String: String]>]?
+public struct OAScheme: Decodable {
+    public var required: [String]?
+    public var type: String
+    public var properties: [String: OAEither<OAProperty, [String: String]>]?
 }

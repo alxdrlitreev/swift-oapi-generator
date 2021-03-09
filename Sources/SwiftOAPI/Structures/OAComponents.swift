@@ -1,5 +1,5 @@
 import Foundation
 
-struct OAComponents: Decodable {
-    var schemas: [String: OAScheme]
+public struct OAComponents: Decodable {
+    public var schemas: [String: OAScheme]
 }
