@@ -11,4 +11,5 @@ public struct OAParameter: Decodable {
     public var name: String
     public var `in`: OAParameterLocation
     public var required: Bool?
+    public var schema: [String: String]?
 }
