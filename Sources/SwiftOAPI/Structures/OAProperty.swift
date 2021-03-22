@@ -11,6 +11,7 @@ public enum OAPropertyType: String, Decodable {
 
 public struct OAProperty: Decodable {
     public var type: OAPropertyType
+    public var format: String?
     public var items: [String: OAEither<String, [String]>]?
     public var `enum`: [String]?
 }
