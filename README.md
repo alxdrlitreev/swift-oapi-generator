@@ -15,7 +15,7 @@ SwiftOAPI support SPM. You've to add to  `Package.swift` file information about 
 let package = Package(
     name: "YourApp",
     dependencies: [
-        .package(url: "https://github.com/alxdrlitreev/SwiftOAPI.git")
+        .package(url: "https://github.com/alxdrlitreev/swift-oapi-generator.git")
     ],
     targets: [
         .target(name: "YourApp", dependencies: ["SwiftOAPI"]),
